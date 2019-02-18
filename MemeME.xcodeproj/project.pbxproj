@@ -58,11 +58,11 @@
 			children = (
 				186C384722172C5E006ADE48 /* AppDelegate.swift */,
 				186C384922172C5E006ADE48 /* ViewController.swift */,
+				186C385922172C8B006ADE48 /* Meme.swift */,
 				186C384B22172C5E006ADE48 /* Main.storyboard */,
 				186C384E22172C61006ADE48 /* Assets.xcassets */,
 				186C385022172C61006ADE48 /* LaunchScreen.storyboard */,
 				186C385322172C61006ADE48 /* Info.plist */,
-				186C385922172C8B006ADE48 /* Meme.swift */,
 			);
 			path = MemeME;
 			sourceTree = "<group>";
@@ -289,6 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R64Z9NC5U3;
 				INFOPLIST_FILE = MemeME/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R64Z9NC5U3;
 				INFOPLIST_FILE = MemeME/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
