@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,73 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MemeME" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zZc-Z3-gRu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="beL-TJ-Se9">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="flexibleSpace" id="s4D-eT-a5Q"/>
+                                    <barButtonItem systemItem="camera" id="jWZ-QG-Dlg"/>
+                                    <barButtonItem systemItem="flexibleSpace" id="A27-yh-fln"/>
+                                    <barButtonItem title="Allbum" id="diO-hs-9Sw"/>
+                                    <barButtonItem systemItem="flexibleSpace" id="Gfb-6u-rpk"/>
+                                </items>
+                            </toolbar>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K8m-47-jvh">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem id="P40-oB-U1n">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="Fqi-fv-e4h"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="rVK-0c-R8b"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Daj-gS-a6i">
+                                <rect key="frame" x="16" y="74" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOTTOM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbd-Ll-JqE">
+                                <rect key="frame" x="16" y="592" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dbd-Ll-JqE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="005-pw-uJ3"/>
+                            <constraint firstItem="Daj-gS-a6i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Dd-h5-2sj"/>
+                            <constraint firstItem="beL-TJ-Se9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9S3-O6-46E"/>
+                            <constraint firstItem="beL-TJ-Se9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9kn-Pn-DWj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Daj-gS-a6i" secondAttribute="trailing" constant="16" id="Efh-15-pdB"/>
+                            <constraint firstItem="dbd-Ll-JqE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F7l-FO-Zya"/>
+                            <constraint firstItem="Daj-gS-a6i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Fjf-OT-CZS"/>
+                            <constraint firstItem="K8m-47-jvh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Gk6-Bm-wNR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dbd-Ll-JqE" secondAttribute="trailing" constant="16" id="Ihi-ll-CUB"/>
+                            <constraint firstItem="beL-TJ-Se9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XCD-lA-D9Q"/>
+                            <constraint firstItem="K8m-47-jvh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zup-ay-a0e"/>
+                            <constraint firstItem="beL-TJ-Se9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gUK-9R-G3D"/>
+                            <constraint firstItem="beL-TJ-Se9" firstAttribute="top" secondItem="dbd-Ll-JqE" secondAttribute="bottom" constant="10" id="ixP-nO-2EL"/>
+                            <constraint firstItem="K8m-47-jvh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mg3-Ov-CYy"/>
+                            <constraint firstItem="K8m-47-jvh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vEw-ps-Sb5"/>
+                            <constraint firstItem="Daj-gS-a6i" firstAttribute="top" secondItem="K8m-47-jvh" secondAttribute="bottom" constant="10" id="x93-Ga-Jig"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-377" y="35"/>
         </scene>
     </scenes>
 </document>
