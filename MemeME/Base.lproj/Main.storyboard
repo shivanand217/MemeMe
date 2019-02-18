@@ -42,44 +42,51 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Daj-gS-a6i">
-                                <rect key="frame" x="16" y="74" width="343" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOTTOM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbd-Ll-JqE">
-                                <rect key="frame" x="16" y="592" width="343" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pcb-L8-HNN">
+                                <rect key="frame" x="16" y="64" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VaK-AQ-eGt">
+                                <rect key="frame" x="16" y="593" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="dbd-Ll-JqE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="005-pw-uJ3"/>
-                            <constraint firstItem="Daj-gS-a6i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Dd-h5-2sj"/>
+                            <constraint firstItem="VaK-AQ-eGt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0ck-Bg-SEi"/>
                             <constraint firstItem="beL-TJ-Se9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9S3-O6-46E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pcb-L8-HNN" secondAttribute="trailing" constant="16" id="9bw-JA-dHD"/>
                             <constraint firstItem="beL-TJ-Se9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9kn-Pn-DWj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Daj-gS-a6i" secondAttribute="trailing" constant="16" id="Efh-15-pdB"/>
-                            <constraint firstItem="dbd-Ll-JqE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F7l-FO-Zya"/>
-                            <constraint firstItem="Daj-gS-a6i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Fjf-OT-CZS"/>
                             <constraint firstItem="K8m-47-jvh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Gk6-Bm-wNR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dbd-Ll-JqE" secondAttribute="trailing" constant="16" id="Ihi-ll-CUB"/>
+                            <constraint firstItem="VaK-AQ-eGt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Rbs-bj-d9v"/>
                             <constraint firstItem="beL-TJ-Se9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XCD-lA-D9Q"/>
+                            <constraint firstItem="pcb-L8-HNN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="XSJ-4n-moL"/>
+                            <constraint firstItem="pcb-L8-HNN" firstAttribute="top" secondItem="K8m-47-jvh" secondAttribute="bottom" id="Yzi-ax-0yz"/>
                             <constraint firstItem="K8m-47-jvh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zup-ay-a0e"/>
                             <constraint firstItem="beL-TJ-Se9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gUK-9R-G3D"/>
-                            <constraint firstItem="beL-TJ-Se9" firstAttribute="top" secondItem="dbd-Ll-JqE" secondAttribute="bottom" constant="10" id="ixP-nO-2EL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VaK-AQ-eGt" secondAttribute="trailing" constant="16" id="goN-5j-OKf"/>
                             <constraint firstItem="K8m-47-jvh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mg3-Ov-CYy"/>
                             <constraint firstItem="K8m-47-jvh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vEw-ps-Sb5"/>
-                            <constraint firstItem="Daj-gS-a6i" firstAttribute="top" secondItem="K8m-47-jvh" secondAttribute="bottom" constant="10" id="x93-Ga-Jig"/>
+                            <constraint firstItem="pcb-L8-HNN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xFn-Hj-n5F"/>
+                            <constraint firstItem="beL-TJ-Se9" firstAttribute="top" secondItem="VaK-AQ-eGt" secondAttribute="bottom" id="xe2-8n-j0I"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cameraBarButtonItem" destination="beL-TJ-Se9" id="e5D-0g-P36"/>
+                        <outlet property="memeImageView" destination="zZc-Z3-gRu" id="MUc-4X-Cla"/>
+                        <outlet property="navBar" destination="K8m-47-jvh" id="1vv-y4-hRv"/>
+                        <outlet property="sharedBarButtonItem" destination="Fqi-fv-e4h" id="UxH-vd-ixd"/>
+                        <outlet property="toolbar" destination="beL-TJ-Se9" id="5Dl-tP-Plk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-377" y="35"/>
+            <point key="canvasLocation" x="-1002.4" y="-43.628185907046479"/>
         </scene>
     </scenes>
 </document>
